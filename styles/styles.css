@@ -31,6 +31,7 @@ input {
 
 input::placeholder {
   color: #8b849b;
+  font-family: "Montserrat", sans-serif;
 }
 
 .search-button {
@@ -105,7 +106,7 @@ ul {
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 li {
@@ -147,6 +148,8 @@ h3 {
 
 .weather {
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 .weather:first-letter {
   text-transform: capitalize;
