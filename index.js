@@ -30,11 +30,8 @@ function formatDay(timestamp) {
 
 function displayForecast(response) {
     let forecast = response.data.daily;
-    // let weather = response.data.weather[0].description;
-    
   
     let forecastElement = document.querySelector("#forecast");
-    // let weatherElement = document.querySelector("#current-weather");
   
     let forecastHTML = `<div class="row week-forecast">`;
     forecast.forEach(function (forecastDay, index) {
