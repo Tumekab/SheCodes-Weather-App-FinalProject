@@ -89,7 +89,7 @@ p {
   font-weight: 800;
 }
 
-.weather-description {
+.weather-description:first-letter {
   text-transform: capitalize;
 }
 
