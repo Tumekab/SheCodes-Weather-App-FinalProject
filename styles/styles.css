@@ -109,6 +109,21 @@ hr {
   text-align: center;
 }
 
+.units {
+  margin-top: 35px;
+}
+
+.current-weather .active {
+  color: #23264b;
+}
+.current-weather .active:hover {
+  text-decoration: none;
+}
+
+.temp-links {
+  cursor: default;
+}
+
 h3 {
   font-size: 20px;
   font-family: "Inter", sans-serif;
