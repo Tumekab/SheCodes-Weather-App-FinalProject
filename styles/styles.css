@@ -103,8 +103,9 @@ ul {
   /* margin: 10px 0 0 5px; */
   text-align: center;
   list-style-type: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  font-weight: 500;
 }
 
 li {
@@ -147,7 +148,7 @@ h3 {
 .weather {
   font-size: 14px;
 }
-.weather::first-letter {
+.weather:first-letter {
   text-transform: capitalize;
 }
 
