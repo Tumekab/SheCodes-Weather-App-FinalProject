@@ -147,6 +147,9 @@ h3 {
 .weather {
   font-size: 14px;
 }
+.weather::first-letter {
+  text-transform: capitalize;
+}
 
 footer p {
   margin-top: 50px;
@@ -157,7 +160,11 @@ footer p {
 }
 
 img {
-  margin: -20px 0 10px 0;
+  margin: -5px 0 10px 0;
+  height: 50px;
+  width: 50px;
+  background-color: #bab578;
+  border-radius: 50%;
 }
 
 span {
