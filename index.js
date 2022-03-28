@@ -34,8 +34,8 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#searched-city");
   let descriptionElement = document.querySelector("#weather-type");
-  // let humidityElement = document.querySelector("#humidity");
-  // let windElement =  document.querySelector("#wind");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement =  document.querySelector("#wind");
   let timeElement = document.querySelector("#current-time");
   let dayElement = document.querySelector("#current-day");
   
@@ -45,8 +45,8 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
-  // humidityElement.innerHTML = response.data.main.humidity;
-  // windElement.innerHTML = Math.round(response.data.wind);
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   timeElement.innerHTML = formatTime(response.data.dt * 1000);
   dayElement.innerHTML = formatDay(response.data.dt);
 }

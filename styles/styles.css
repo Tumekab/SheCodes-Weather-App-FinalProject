@@ -99,8 +99,22 @@ h2 {
   font-weight: 800;
 }
 
+ul {
+  /* margin: 10px 0 0 5px; */
+  text-align: center;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+li {
+  display: inline;
+  margin: 0 15px;
+}
+
 hr {
   max-width: 850px;
+  margin-top: 30px;
   border-top: 2px solid #23264b;
   border-radius: 0.1px;
 }
