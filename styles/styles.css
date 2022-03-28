@@ -1,0 +1,138 @@
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #eae8eb;
+  color: #23264b;
+}
+
+button footer h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.city-title {
+  margin: 20px 0 20px 0;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d5d4dc;
+  width: 328px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+input::placeholder {
+  color: #8b849b;
+}
+
+.search-button {
+  border: 1px solid #23264b;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  background-color: #23264b;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.search-button:hover {
+  background-color: #363a73;
+  color: #fff;
+  border: 1px solid #363a73;
+}
+
+.current-location {
+  margin-left: 5px;
+  border: 2px solid #23264b;
+  border-radius: 4px;
+  width: 140px;
+  height: 30px;
+  color: #23264b;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.current-location:hover {
+  background-color: #23264b;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.current-weather {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.temperature {
+  text-align: end;
+  font-size: 144px;
+  font-weight: 800;
+}
+
+.todays-info {
+  margin: 25px 0 0 30px;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+hr {
+  max-width: 850px;
+  border-top: 2px solid #23264b;
+  border-radius: 0.1px;
+}
+
+.week-forecast {
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+.weather {
+  font-size: 14px;
+}
+
+footer p {
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+
+img {
+  margin: -20px 0 10px 0;
+}
+
+span {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
