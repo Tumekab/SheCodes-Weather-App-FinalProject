@@ -1,5 +1,4 @@
 
-
 function formatTime(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -79,6 +78,7 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   timeElement.innerHTML = formatTime(response.data.dt * 1000);
+  
   dayElement.innerHTML = formatDay(response.data.dt);
 
   getForecast(response.data.coord);
@@ -116,10 +116,13 @@ function displayCelsiusTemp(event) {
 }
 
 function searchLocation(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
   let apiKey = "60ace44fa1b88492bab7a31edc3708f3";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(searchWeather);
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
 }
+
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
@@ -141,4 +144,4 @@ let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", getCurrentLocation);
 
 searchCity("London");
-displayForecast();
+// displayForecast();
